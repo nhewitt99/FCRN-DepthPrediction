@@ -1,11 +1,13 @@
 import argparse
 import os
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from matplotlib import pyplot as plt
 from PIL import Image
 
 import models
+
+tf.disable_v2_behavior()
 
 def predict(model_data_path, image_path):
 
